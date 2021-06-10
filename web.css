@@ -1,0 +1,87 @@
+.list {
+  display: inline;
+  padding-right: 40px;
+  text-align: right;
+  color: white;
+}
+#button {
+  height: 40px;
+  width: 130px;
+  background-color: orange;
+  border: 0px;
+  border-radius: 50px;
+  color: white;
+}
+#buttons {
+  height: 40px;
+  width: 150px;
+  background-color: white;
+  border: 2px solid orange;
+  border-radius: 50px;
+  color: orange;
+}
+
+#text {
+  padding-top: 200px;
+  padding-left: 100px;
+  color: white;
+}
+#text1 {
+  padding-left: 100px;
+  color: white;
+}
+.but {
+  padding-left: 100px;
+}
+#nav3 {
+  display: flex;
+  justify-content: space-between;
+}
+#img_2 {
+  padding-left: 400px;
+  height: 100px;
+}
+#back {
+  background-image: url(hero.jpg);
+
+  height: 700px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+}
+#frist {
+  text-align: center;
+}
+hr {
+  width: 70px;
+  border-color: orange;
+}
+#p1 {
+  padding-right: 80px;
+}
+.sec {
+  width: 262px;
+  padding-top: 110px;
+  display: inline-block;
+  padding-right: 20px;
+}
+#th {
+  padding-left: 220px;
+}
+.img_1 {
+  height: 280px;
+  text-align: center;
+  max-width: 100%;
+  max-height: 100%;
+  float: left;
+  background-size: 100%;
+}
+#dive {
+  text-align: center;
+  max-width: 100%;
+  max-height: 100%;
+  float: left;
+  background-size: 100%;
+}
