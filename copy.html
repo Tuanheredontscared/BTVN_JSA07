@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="kobt.css">
+    </head>
+    <body>
+       <div id="clickable">
+
+       </div>
+       <script type="text/javascript">
+       document.getElementById("clickable").innerHTML="click"
+       document.getElementById("clickable").addEventListener("mouseover", function () {
+           document.getElementById("clickable").style.backgroundColor="red"
+       })
+       document.getElementById("clickable").addEventListener("mouseout", function () {
+           document.getElementById("clickable").style.backgroundColor="black"
+       })
+    </script>
+    </body>
+</html
