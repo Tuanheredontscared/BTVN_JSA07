@@ -1,0 +1,23 @@
+hr{
+    background-color: black;
+    border: 0 none;
+    color: black;
+    height: 6px
+}
+#input-qty{
+    width: 20px;
+}
+div{
+  
+    width: 90px;
+    height:30px;
+    text-align: center;
+}
+.buttonbuy{
+    height:30px;
+    width: 100px;
+    color: white;
+    background-color: black;
+    border: 0px;
+    margin-left: 1420px;
+}
