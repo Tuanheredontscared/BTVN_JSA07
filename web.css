@@ -1,8 +1,11 @@
+
 .list {
   display: inline;
   padding-right: 40px;
   text-align: right;
   color: white;
+  text-decoration: none;
+  
 }
 #button {
   height: 40px;
@@ -84,4 +87,114 @@ hr {
   max-height: 100%;
   float: left;
   background-size: 100%;
+}
+#iphone{
+  height: 450px;
+  width: 230px;
+  padding-left: 300px;
+}
+#h1_2{
+  text-align: center;
+}
+
+#an{
+  height: 40.5px;
+  padding-top: 40px;
+  padding-left: 100px;
+ 
+}
+.sm{
+  width: 350px;
+  padding-left: 110px;
+  
+}
+#jk{
+ display: flex;
+ padding-top: 70px;
+ padding-left: 245px ;
+ 
+}
+#better{
+  
+  text-align: center;
+  padding-right: 15px;
+}
+.bf{
+  height: 150px;
+  width:200px;
+  padding-left: 20px;
+  padding-top: 70px;
+  
+}
+#we{
+  text-align: center;
+}
+#word{
+  display: flex;
+  padding-left: 220px;
+}
+.word_1{
+  padding-left: 100px; 
+}
+#hr_1{
+padding-top: 200px;
+}
+.premium{
+border: black;
+height: 100px;
+width: 50px;
+}  
+div-1{
+  width: 100px;
+  
+}
+#line{
+  display: flex;
+}
+#month{
+  margin-top: 35px;
+}
+
+#pro{
+  padding-left: 100px;
+}
+#starter{
+  padding-left: 100px;
+}
+.login{
+  width: 120px;
+  border-radius: 50px;
+  height:30px;
+  background-color: orange;
+  border: 0px;
+  color: white;
+}
+#flex{
+  display: flex;
+}
+#big {
+  padding-left: 370px;
+}
+#sta{
+  text-align: center;
+}
+#last{
+  display: flex;
+ padding-left: 500px;
+  
+}
+#input{
+  padding-bottom: 100px ;
+  padding-left: 300px;
+}
+.wrap_1{
+  padding-top: 0.5cm;
+}
+input{
+  width: 500px;
+  border-radius: 3px;
+  
+}
+#hihi{
+  text-align: center;
 }
