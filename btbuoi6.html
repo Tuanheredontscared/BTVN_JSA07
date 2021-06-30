@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        
+
+        .input {
+            height: 35px;
+            width: 250px;
+            border-radius: 6px;
+        }
+
+        #largest {
+            margin-top: 50px;
+        }
+
+        #clickable {
+            margin-top: 20px;
+        }
+
+        #submit{
+            height: 35px;
+            width: 260px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="btbuoi6.js">
+</head>
+
+<body>
+   <form onsubmit="handleSubmit()" id="largest">
+        <h1>Sign Up For Free, Now</h1>
+        <p>Username</p>
+        <form>
+            <input type="text" placeholder="yourusername" id="input_1" class="input">
+        </form>
+        <p>E-mail</p>
+        <form>
+            <input type="email" placeholder="yourmail@gmail.com" id="input_2" class="input">
+        </form>
+        <p>Password</p>
+        <form>
+            <input type="password" placeholder="youremailpassword" id="input_3" class="input">
+        </form>
+        <input type="submit" value="Login" id="submit">
+        </form>
+    
+    <p id="text"></p>
+    <script>
+function handleSubmit() {
+    let name = document.getElementById('input_1').value;
+    let mail = document.getElementById('input_2').value;
+    let pass = document.getElementById('input_3').value;
+    let info = {
+        username: name,
+        mail: mail,
+        pass: pass
+    }
+    localStorage.setItem("user", JSON.stringify(info))
+    document.getElementById('text').innerHTML = localStorage.getItem("user")
+}
+
+    </script>
+</body>
+
+</html>
