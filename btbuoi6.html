@@ -3,8 +3,6 @@
 
 <head>
     <style>
-        
-
         .input {
             height: 35px;
             width: 250px;
@@ -19,48 +17,87 @@
             margin-top: 20px;
         }
 
-        #submit{
-            height: 35px;
+        #submit {
+            height: 40px;
             width: 260px;
             border-radius: 6px;
             margin-top: 20px;
+            background-color: white;
+            color: blue;
+            border: 0px;
+        }
+
+        #allcode {
+            height: 500px;
+            background-color: blue;
+            width: 370px;
+        }
+
+        #code1 {
+            padding-left: 30px;
+        }
+        #small1{
+            padding-top: 5px;
+        }
+        h1{
+            padding-top: 40px;
+            color: white;
+        }
+        .input{
+            
+            border-color: white;
+         
+        }
+        #h7{
+            text-align: center;
+            padding-right: 60px;
+            padding-top: 10px;
         }
     </style>
     <link rel="stylesheet" href="btbuoi6.js">
 </head>
 
 <body>
-   <form onsubmit="handleSubmit()" id="largest">
-        <h1>Sign Up For Free, Now</h1>
-        <p>Username</p>
-        <form>
-            <input type="text" placeholder="yourusername" id="input_1" class="input">
-        </form>
-        <p>E-mail</p>
-        <form>
-            <input type="email" placeholder="yourmail@gmail.com" id="input_2" class="input">
-        </form>
-        <p>Password</p>
-        <form>
-            <input type="password" placeholder="youremailpassword" id="input_3" class="input">
-        </form>
-        <input type="submit" value="Login" id="submit">
-        </form>
-    
+    <div id="allcode">
+        <div id="code1">
+            <form onsubmit="handleSubmit()" id="largest">
+                <h1>Sign Up For Free, Now</h1>
+                <div  id="small1">
+                    <p>Username</p>
+                    <form>
+                        <input type="text" placeholder="yourusername" id="input_1" class="input">
+                    </form>
+                    <p>E-mail</p>
+                    <form>
+                        <input type="email" placeholder="yourmail@gmail.com" id="input_2" class="input">
+                    </form>
+                    <p>Password</p>
+                    <form>
+                        <input type="password" placeholder="youremailpassword" id="input_3" class="input">
+                    </form>
+                    <input type="submit" value="Login" id="submit">
+                </div>
+            </form>
+            <div id="h7">
+            <h7>Forgot your password?</h7>
+            </div>
+        </div>
+    </div>
+
     <p id="text"></p>
     <script>
-function handleSubmit() {
-    let name = document.getElementById('input_1').value;
-    let mail = document.getElementById('input_2').value;
-    let pass = document.getElementById('input_3').value;
-    let info = {
-        username: name,
-        mail: mail,
-        pass: pass
-    }
-    localStorage.setItem("user", JSON.stringify(info))
-    document.getElementById('text').innerHTML = localStorage.getItem("user")
-}
+        function handleSubmit() {
+            let name = document.getElementById('input_1').value;
+            let mail = document.getElementById('input_2').value;
+            let pass = document.getElementById('input_3').value;
+            let info = {
+                username: name,
+                mail: mail,
+                pass: pass
+            }
+            localStorage.setItem("user", JSON.stringify(info))
+            document.getElementById('text').innerHTML = localStorage.getItem("user")
+        }
 
     </script>
 </body>
