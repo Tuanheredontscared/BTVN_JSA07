@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <div class="img" id="img"></div>
+    <button id="btn" onclick="change()">click to change</button>
+    <script>
+        const change = () =>{
+            i = Math.floor((Math.random()*6)+1);
+            console.log(i)
+            document.getElementById('img').innerHTML = `<img src='img/d${i}.jpg'>`
+        }
+    </script>
+</body>
+
+</html>
