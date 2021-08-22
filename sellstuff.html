@@ -6,17 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="sellstuff.css">
+    <link rel="stylesheet" href="sellstuff.css"><!-- Add icon library -->
+    
 </head>
 
 <body>
+  <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
     <div id="full-page">
         <div id="full-page1">
             <div class="stuff">
                 <h2>Headphone</h2>
                 <div class="quantity-price">
                     <img src="headphone.jpg" id="head_1">
-                    <h3>5.5$</h3>
+                    <h3>12$</h3>
                     <button onclick="plus0()">+</button>
                     <input type="text" class="inc" id="inc" value="0" min="0" max="10">
                     <button onclick="minus0()">-</button>
@@ -30,7 +32,7 @@
                 <h2>Flower pot</h2>
                 <div class="quantity-price">
                     <img src="pot.jpg" id="pot">
-                    <h3>5.5$</h3>
+                    <h3>3$</h3>
                     <button onclick="plus1()">+</button>
                     <input type="text" class="inc" id="inc1" value="0" max=10 min=0>
                     <button onclick="minus1()">-</button>
@@ -43,8 +45,8 @@
                 <img src="">
                 <h2>Socks</h2>
                 <div class="quantity-price">
-                    <img src="socks.jpg" id="socks_1">
-                    <h3>5.5$</h3>
+                    <img src="socks1.jpg" id="socks_1">
+                    <h3>2$</h3>
                     <button onclick="plus2()">+</button>
                     <input type="text" class="inc" id="inc2" value="0" max=10 min=0>
                     <button onclick="minus2()">-</button>
@@ -59,7 +61,7 @@
                 <img src="">
                 <h2>Glasses</h2>
                 <div class="quantity-price">
-                    <img src="glass.jpeg" id="glass_1">
+                    <img src="gls.jpg" id="glass_1">
                     <h3>5.5$</h3>
                     <button onclick="plus3()">+</button>
                     <input type="text" class="inc" id="inc3" value="0" max="10">
@@ -73,7 +75,8 @@
                 <img src="">
                 <h2>Toy</h2>
                 <div class="quantity-price">
-                    <h3>5.5$</h3>
+                    <img src="toy.jpg" id="toy1">
+                    <h3>7$</h3>
                     <button onclick="plus4()">+</button>
                     <input type="text" class="inc" id="inc4" value="0" max=10 min=0>
                     <button onclick="minus4()">-</button>
@@ -86,7 +89,8 @@
                 <img src="">
                 <h2>Cup</h2>
                 <div class="quantity-price">
-                    <h3>5.5$</h3>
+                    <img src="cup1.jpg" id="cup1">
+                    <h3>4$</h3>
                     <button onclick="plus_cup()">+</button>
                     <input type="text" class="inc" id="inc5" value="0" max=10 min=0>
                     <button onclick="minus_cup()">-</button>
@@ -97,37 +101,10 @@
             </div>
         </div>
     </div>
-    <div id="Bill">
-        <h1>Name<h1></h1>
-            <h1>Quantity</h1>
-            <h1 id="last_test">Total</h1>
+    <div id="btn">
+    <button onclick="remove_stuff()" id="bnt_clear">CLEAR CART</button>
     </div>
-    <div id="haha">
-        <div id="hhihi">
-            <h2 id="name_of_stuff" class="hehe"></h2>
-            <h2 id="name_of_stuff_1" class="hehe"></h2>
-            <h2 id="name_of_stuff_2" class="hehe"></h2>
-            <h2 id="name_of_stuff_3" class="hehe"></h2>
-            <h2 id="name_of_stuff_4" class="hehe"></h2>
-            <h2 id="name_of_stuff_5" class="hehe"></h2>
-        </div>
-        <div id="div_for_quantity">
-            <h2 id="quantity_of_stuff" class="for_quantity"></h2>
-            <h2 id="quantity_of_stuff_1" class="for_quantity"></h2>
-            <h2 id="quantity_of_stuff_2" class="for_quantity"></h2>
-            <h2 id="quantity_of_stuff_3" class="for_quantity"></h2>
-            <h2 id="quantity_of_stuff_4" class="for_quantity"></h2>
-            <h2 id="quantity_of_stuff_5" class="for_quantity"></h2>
-        </div>
-        <div id="total">
-            <h2 id="result_Of_stuff" class="result"></h2>
-            <h2 id="result_Of_stuff_1" class="result"></h2>
-            <h2 id="result_Of_stuff_2" class="result"></h2>
-            <h2 id="result_Of_stuff_3" class="result"></h2>
-            <h2 id="result_Of_stuff_4" class="result"></h2>
-            <h2 id="result_Of_stuff_5" class="result"></h2>
-        </div>
-    </div>
+    <script src="https://kit.fontawesome.com/97996d56a1.js" crossorigin="anonymous"></script>
     <script src="sellstuff.js"></script>
 </body>
 
